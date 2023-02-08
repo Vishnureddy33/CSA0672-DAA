@@ -1,0 +1,43 @@
+#include <stdio.h> 
+void function(int min); 
+int main()
+{
+ 
+int n; 
+scanf("%d",&n); 
+function(n); 
+return 0;
+}
+
+void function(int n)
+{
+
+int count=0; 
+int i=1,s=1; 
+count++; 
+count++; 
+while(s<=n)
+{
+
+count++; 
+i++;
+count++; 
+s+=i; 
+count++;
+}
+
+count++; 
+printf("%d",count);
+}
+OUTPUT:
+9
+12
+--------------------------------
+Process exited after 5.585 seconds with return value 0
+Press any key to continue . . .
+
+4
+9
+--------------------------------
+Process exited after 2.474 seconds with return value 0
+Press any key to continue . . .
